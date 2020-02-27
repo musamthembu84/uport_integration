@@ -40,11 +40,20 @@ class Home extends Component {
       this.state = {
         account: '',
         candidateCount:0,
-        candidates:[]
+        candidates:[],
+        voterID:''
       }
+      this.castVote = this.castVote.bind(this);
   }
 
+   castVote(candidate_id){
+    this.state.election.methods.vote(candidate_id).send({from : this.state.account});
+   }
 
+
+   handleChange=(e)=>{
+    this.setState({myId : e.target.value});
+   }
   render() {
     return(
 
@@ -52,7 +61,7 @@ class Home extends Component {
        <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h1 className="text-center">Election Results</h1>
+              <h1 className="text-center">UJ SRC Elections</h1>
               <hr/>
               <br/>
               <div id="loader">
@@ -82,21 +91,32 @@ class Home extends Component {
                 </table>
                 <hr/>
 
-                <form onSubmit="">
+                <form onSubmit={(event => {
+                  event.preventDefault()
+                  const candidatesSelect = this.state.myId;
+                  console.log(candidatesSelect)
+                  this.castVote(1,this.state.account);
+
+                })}>
                   <div className="form-group">
                     <label htmlFor="candidatesSelect">Select Candidate Below</label>
-                    <select  className="form-control" id="candidatesSelect">
+                    <select  className="form-control" id="candidatesSelect"
+                             value={this.state.myId}
+                             onChange={this.handleChange}
+                    >
 
                       {
                         this.state.candidates.map((candidate,key)=>{
                           return(
-                              <option key={key}> {candidate.name} </option>
-                              )
+
+                           <option key={key} value={candidate.id.toString()}  onChange={this.onChange}> {candidate.name} </option>
+
+                                )
+
                         })
                       }
-
-
                     </select>
+
                   </div>
                   <button type="submit" className="btn btn-primary">Vote</button>
                   <hr/>
