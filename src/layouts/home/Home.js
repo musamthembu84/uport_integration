@@ -84,8 +84,18 @@ class Home extends Component {
 
                 <form onSubmit="">
                   <div className="form-group">
-                    <label htmlFor="candidatesSelect">Select Candidate</label>
-                    <select className="form-control" id="candidatesSelect">
+                    <label htmlFor="candidatesSelect">Select Candidate Below</label>
+                    <select  className="form-control" id="candidatesSelect">
+
+                      {
+                        this.state.candidates.map((candidate,key)=>{
+                          return(
+                              <option key={key}> {candidate.name} </option>
+                              )
+                        })
+                      }
+
+
                     </select>
                   </div>
                   <button type="submit" className="btn btn-primary">Vote</button>
