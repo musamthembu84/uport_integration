@@ -95,7 +95,7 @@ class Home extends Component {
                   event.preventDefault()
                   const candidatesSelect = this.state.myId;
                   console.log(candidatesSelect)
-                  this.castVote(1,this.state.account);
+                  this.castVote(candidatesSelect,this.state.account);
 
                 })}>
                   <div className="form-group">

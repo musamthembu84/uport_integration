@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2162507f-4f4a-411d-b5db-6f8e5443d6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Election.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Election.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/Election.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Election.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/home/Home.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582736778608</updated>
-      <workItem from="1582736780089" duration="20771000" />
+      <workItem from="1582736780089" duration="21449000" />
+      <workItem from="1582964712887" duration="1562000" />
     </task>
     <servers />
   </component>
@@ -70,7 +74,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

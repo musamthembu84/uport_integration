@@ -13,8 +13,8 @@ contract Election {
     uint public candidatesCount;
 
     constructor () public {
-        addCandidates("EFFSC");
         addCandidates("Sasco");
+        addCandidates("EFFSC");
         addCandidates("Daso");
     }
 
@@ -29,7 +29,8 @@ contract Election {
 
     function vote (uint _candidateId) public {
         require(!voters[msg.sender]); //requires that person has not voted before;
-        require(_candidateId>0 && _candidateId<=candidatesCount); //requires a valid candidate
+
+        require(_candidateId > 0 && _candidateId<=candidatesCount); //requires a valid candidate
 
         voters[msg.sender]=true; //recording vote
 
