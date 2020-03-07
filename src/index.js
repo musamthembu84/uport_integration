@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 import { syncHistoryWithStore } from 'react-router-redux'
 import { UserIsAuthenticated } from './util/wrappers.js'
+import UPortLogin from "./layouts/home/UPortLogin";
 
 // Layouts
 import App from './App'
@@ -23,6 +24,7 @@ ReactDOM.render((
           <IndexRoute component={Home} />
           <Route path="dashboard" component={UserIsAuthenticated(Dashboard)} />
           <Route path="profile" component={UserIsAuthenticated(Profile)} />
+          <Route path="uport" component={UPortLogin}/>
         </Route>
       </Router>
     </Provider>
