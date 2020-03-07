@@ -17,6 +17,11 @@ class Profile extends Component {
               <strong>Name</strong><br />
               {this.props.authData.name}
             </p>
+
+            <p>
+              <strong>Account</strong><br />
+              {this.props.authData.address}
+            </p>
           </div>
         </div>
       </main>

@@ -1,18 +1,25 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { HiddenOnlyAuth, VisibleOnlyAuth } from './util/wrappers.js'
+import { HiddenOnlyAuth, VisibleOnlyAuth } from '../../util/wrappers.js'
 
 // UI Components
-import LoginButtonContainer from './user/ui/loginbutton/LoginButtonContainer'
-import LogoutButtonContainer from './user/ui/logoutbutton/LogoutButtonContainer'
+import LoginButtonContainer from '../../user/ui/loginbutton/LoginButtonContainer'
+import LogoutButtonContainer from '../../user/ui/logoutbutton/LogoutButtonContainer'
+
+
 
 // Styles
-import './css/oswald.css'
-import './css/open-sans.css'
-import './css/pure-min.css'
-import './App.css'
+import '../../css/oswald.css'
+import '../../css/open-sans.css'
+import '../../css/pure-min.css'
+import '../../App.css'
+import Home from "../../layouts/home/Home";
 
-class App extends Component {
+
+
+class UPortLogin extends Component {
+
+
     render() {
         const OnlyAuthLinks = VisibleOnlyAuth(() =>
                 <span>
@@ -41,11 +48,11 @@ class App extends Component {
                         <OnlyAuthLinks />
                     </ul>
                 </nav>
-
-                {this.props.children}
+                <Home/>
             </div>
         );
     }
 }
 
-export default App
+export default UPortLogin
+
