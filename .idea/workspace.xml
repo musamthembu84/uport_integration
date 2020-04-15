@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2162507f-4f4a-411d-b5db-6f8e5443d6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/layouts/components/Forms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/dashboard/ElectionUI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/dashboard/TestingWork.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/home/UPortLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/contracts/Election.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Election.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/layouts/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/layouts/profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/election.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/election.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -73,6 +66,10 @@
       <updated>1582736778608</updated>
       <workItem from="1582736780089" duration="21449000" />
       <workItem from="1582964712887" duration="21909000" />
+      <workItem from="1583557420655" duration="1105000" />
+      <workItem from="1585748127942" duration="2849000" />
+      <workItem from="1586292536711" duration="1786000" />
+      <workItem from="1586984619561" duration="185000" />
     </task>
     <servers />
   </component>
